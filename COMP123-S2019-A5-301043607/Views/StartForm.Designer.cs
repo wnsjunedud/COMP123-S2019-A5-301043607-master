@@ -81,7 +81,7 @@
             // LogoPictureBox
             // 
             this.LogoPictureBox.Image = global::COMP123_S2019_A5_301043607.Properties.Resources.DollarComputerLogo;
-            this.LogoPictureBox.Location = new System.Drawing.Point(41, 216);
+            this.LogoPictureBox.Location = new System.Drawing.Point(36, 216);
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.LogoPictureBox.Size = new System.Drawing.Size(151, 155);
             this.LogoPictureBox.TabIndex = 4;
