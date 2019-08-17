@@ -69,5 +69,25 @@ namespace COMP123_S2019_A5_301043607.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OrderFormPic {
+            get {
+                object obj = ResourceManager.GetObject("OrderFormPic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OrderFormPic1 {
+            get {
+                object obj = ResourceManager.GetObject("OrderFormPic1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

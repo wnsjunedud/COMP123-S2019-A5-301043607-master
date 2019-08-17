@@ -8,7 +8,6 @@ namespace COMP123_S2019_A5_301043607.Models
 
     public partial class Products
     {
-        [Key]
         public short productID { get; set; }
 
         [Column(TypeName = "money")]

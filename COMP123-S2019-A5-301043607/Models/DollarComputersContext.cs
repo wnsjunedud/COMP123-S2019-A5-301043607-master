@@ -12,11 +12,11 @@ namespace COMP123_S2019_A5_301043607.Models
         {
         }
 
-        public virtual DbSet<products> products { get; set; }
+        public virtual DbSet<Products> products { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<products>()
+            modelBuilder.Entity<Products>()
                 .Property(e => e.cost)
                 .HasPrecision(19, 4);
         }

@@ -66,9 +66,14 @@
             this.productsTableAdapter = new COMP123_S2019_A5_301043607.DollarComputersDataSetTableAdapters.productsTableAdapter();
             this.SelectLabel = new System.Windows.Forms.Label();
             this.YourLabel = new System.Windows.Forms.Label();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.SelectionChanged = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // ProductDataGridView
@@ -116,6 +121,7 @@
             this.ProductDataGridView.RowTemplate.Height = 37;
             this.ProductDataGridView.Size = new System.Drawing.Size(774, 420);
             this.ProductDataGridView.TabIndex = 0;
+            this.ProductDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductDataGridView_CellContentClick);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -367,11 +373,49 @@
             this.YourLabel.TabIndex = 2;
             this.YourLabel.Text = "Your Selection";
             // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // NextButton
+            // 
+            this.NextButton.Location = new System.Drawing.Point(685, 523);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(99, 43);
+            this.NextButton.TabIndex = 25;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.Location = new System.Drawing.Point(565, 523);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(99, 43);
+            this.CancelButton.TabIndex = 24;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // SelectionChanged
+            // 
+            this.SelectionChanged.Location = new System.Drawing.Point(443, 523);
+            this.SelectionChanged.Name = "SelectionChanged";
+            this.SelectionChanged.Size = new System.Drawing.Size(108, 43);
+            this.SelectionChanged.TabIndex = 26;
+            this.SelectionChanged.Text = "Change";
+            this.SelectionChanged.UseVisualStyleBackColor = true;
+            this.SelectionChanged.Click += new System.EventHandler(this.SelectionChanged_Click);
+            // 
             // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(774, 529);
+            this.Controls.Add(this.SelectionChanged);
+            this.Controls.Add(this.NextButton);
+            this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.YourLabel);
             this.Controls.Add(this.SelectLabel);
             this.Controls.Add(this.ProductDataGridView);
@@ -382,6 +426,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,5 +471,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn webcamDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label SelectLabel;
         private System.Windows.Forms.Label YourLabel;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Button SelectionChanged;
     }
 }

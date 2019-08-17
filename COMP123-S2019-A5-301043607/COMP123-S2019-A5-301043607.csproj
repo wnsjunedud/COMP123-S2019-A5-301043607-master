@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>COMP123_S2019_A5_301043607</RootNamespace>
     <AssemblyName>COMP123-S2019-A5-301043607</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,6 +62,7 @@
       <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Models\DollarComputersContext.cs" />
+    <Compile Include="Models\ProductField.cs" />
     <Compile Include="Models\Products.cs" />
     <Compile Include="Views\AboutForm.cs">
       <SubType>Form</SubType>
@@ -155,9 +157,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DollarComputerLogo.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrderFormPic.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrderFormPic1.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
