@@ -668,6 +668,7 @@
             this.Controls.Add(this.CancelButton);
             this.Name = "OrderForm";
             this.Text = "OrderForm";
+            this.Load += new System.EventHandler(this.OrderForm_Load);
             this.OrderFormMenuStrip.ResumeLayout(false);
             this.OrderFormMenuStrip.PerformLayout();
             this.PriceGroupBox.ResumeLayout(false);

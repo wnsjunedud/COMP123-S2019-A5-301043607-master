@@ -20,17 +20,16 @@ namespace COMP123_S2019_A5_301043607
         public static SelectForm selectForm;
         public static ProductInfoForm productInfoForm;
         public static OrderForm orderForm;
-        //public static AboutForm aboutForm;
+        public static AboutForm aboutForm;
 
-        //public static Product product;
+        public static Products product;
 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            // instantiate all forms here
+            
             splashForm = new SplashForm();
             startForm = new StartForm();
             selectForm = new SelectForm();
@@ -38,7 +37,7 @@ namespace COMP123_S2019_A5_301043607
             orderForm = new OrderForm();
             aboutForm = new AboutForm();
 
-            //product = new Product();
+            product = new Products();
 
             Application.Run(orderForm);
         }

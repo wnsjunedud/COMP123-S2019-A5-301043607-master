@@ -8,6 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*
+ * Student Name : Juneyeong Lee
+ * Student Id : 301043697
+ * Description : This is ProductInfoForm Class
+ */
 
 namespace COMP123_S2019_A5_301043607.Views
 {
